@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from "./components/Home"
 import Logo from "./Asessts/download.png";
 import { useSelector } from 'react-redux';
+import Dashboard from './components/Dashboard';
 
 const App = () => {
 
@@ -18,7 +19,7 @@ const App = () => {
         <div className="px-6 h-[calc(100vh-72px)] overflow-y-scroll hide-scrollbar flex xl:flex-row flex-col-reverse">
           <div className="flex-1 h-fit pb-40">
             <Routes>
-              <Route path="/" element={<Home/>} />
+              <Route path="/" element={<Dashboard/>} />
               {/* <Route path="/artists/:id" element={<ArtistDetails />} />
               <Route path="/songs/:songid" element={<SongDetails />} />
               <Route path="/search/:searchTerm" element={<Search />} /> */}
